@@ -1,20 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="mn">
 
 <head>
-    <title>Welcome to Internet Technology Fundamentals </title>
+    <meta charset="UTF-8">
+    <title>TheFacebook | Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-table {
+            width: 100%;
+            background-color: #00226a;
+            color: rgb(255, 255, 255);
+            ;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Үндсэн хүснэгт (Main Layout) */
+        .main-container {
+            width: 900px;
+            background-color: white;
+            border: 1px;
+        }
+
+        /* Зүүн талын цэс (Sidebar) */
+        .sidebar {
+            width: 150px;
+            vertical-align: top;
+            padding: 10px;
+            border-right: 1px;
+        }
+
+        .sidebar ul {
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
+
+        .sidebar a {
+            color: #3d3b98;
+            text-decoration: none;
+        }
+
+
+        .content {
+            padding: 20px;
+            vertical-align: top;
+        }
+
+        .box-header {
+            background-color: #3b5998;
+            color: white;
+            padding: 5px;
+            font-weight: d;
+            font-size: 14px;
+        }
+
+        .box-content {
+            border: 1px solid #3b5998;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Мэдээллийн хүснэгт */
+        .info-table {
+            width: 100%;
+            font-size: 13px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            width: 120px;
+            color: #666;
+            border: 1px;
+        }
+
+        .profile-pic {
+            width: 200px;
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Welcome to Laboratory</h1>
-    <p>Lorem Ipsum is simply dummy
-        text of the printing and typesetting ind
-        ustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-        took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-        but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-        software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-</body>
 
+    <table class="header-table">
+        <tr>
+            <td><a href="#" class="logo">[ thefacebook ]</a></td>
+            <td align="right">
+                home search global social net invite faq logout
+            </td>
+        </tr>
+    </table>
+
+    <table class="main-container">
+        <tr>
+            <td class="sidebar">
+                <input type="text" style="width: 80px;">
+                <hr>
+                <ul>
+                    <li><a href="#">My Profile [edit]</a></li>
+                    <li><a href="#">My Groups</a></li>
+                    <li><a href="#">My Friends</a></li>
+                    <li><a href="#">My Messages</a></li>
+                    <li><a href="#">My Account</a></li>
+                </ul>
+            </td>
+
+            <td class="content">
+                <div class="box-header">Пүрэвсамбуу -ийн Profile</div>
+
+                <table width="100%">
+                    <tr>
+                        <td width="220" valign="top">
+                            <div class="box-header">Picture [edit]</div>
+                            <div class="box-content">
+                                <img src="Profile.jpg" alt="Profile" class="profile-pic">
+                            </div>
+                        </td>
+
+                        <td valign="top">
+                            <div class="box-header">Information [edit]</div>
+                            <div class="box-content">
+                                <table class="info-table">
+                                    <tr>
+                                        <td colspan="2"><strong>Account Info:</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info-label">Name:</td>
+                                        <td>Пүрэвсамбуу</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info-label">Member Since:</td>
+                                        <td>January 12, 2012</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info-label">Last Update:</td>
+                                        <td>February 3, 2026</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><br><strong>Basic Info:</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info-label">Sex:</td>
+                                        <td>Male</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info-label">Concentration:</td>
+                                        <td>Computing Sciences</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
 
 </html>
